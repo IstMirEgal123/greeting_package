@@ -1,0 +1,33 @@
+{
+  "name": "@istmiregal123/greeting-package",
+  "version": "1.0.0",
+  "description": "Greeting a person",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IstMirEgal123/greeting_package"
+  },
+  "main": "lib/index.cjs",
+  "exports": {
+    "import": {
+      "default": "./lib/index.esm.js",
+      "types": "./lib/types/index.d.ts"
+    },
+    "require": {
+      "default": "./lib/index.cjs",
+      "types": "./lib/types/index.d.ts"
+    }
+  },
+  "files": ["lib"],
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "istMirEgal123",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "4.22.4",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.4.5"
+  }
+}
