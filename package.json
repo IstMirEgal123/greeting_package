@@ -17,14 +17,18 @@
       "types": "./lib/types/index.d.ts"
     }
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "type": "module",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "release-package": "npm run build && npx changeset publish"
   },
   "author": "istMirEgal123",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.29.6",
     "rollup": "4.22.4",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-typescript2": "^0.36.0",
